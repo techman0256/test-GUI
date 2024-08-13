@@ -1,0 +1,39 @@
+GET http://localhost:5000/ profile/
+###
+
+POST http://localhost:5000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "something@nothing.com",
+    "password": "password"
+}
+###
+# PUT  http://localhost:5000/
+# Content-Type: application/json
+
+# {
+#     "email": "bakwas@bekaar.com",
+#     "password": "1234password"
+# } 
+###
+POST  http://localhost:5000/auth/sign-in
+Content-Type: application/json
+
+{
+    "email": "kamkaro@kamaao.com",
+    "password": "$$$$paisahipaisa"
+}
+### 
+
+POST  http://localhost:5000/crtprofile/63caa0d099247c13b1094b75
+Content-Type: application/json
+
+{
+    "name": "Kalhar Patel",
+    "email": "202101009@daiict.ac.in",
+    "contact_no": "212173314",
+    "age": 19,
+    "gender": "M"
+}
+###
